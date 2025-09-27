@@ -1,0 +1,1789 @@
+{
+    "name":"shop",
+    "size": {
+        "width": 720, "height": 1280
+    }
+    ,
+    "resources": {
+        "shop":[ {
+            "type": "image", "key": "default", "url": "assets/image/default.jpg", "overwrite": false
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "label", "textureURL": "assets/atlas/label.png", "atlasURL": "assets/atlas/label.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "button", "textureURL": "assets/atlas/button.png", "atlasURL": "assets/atlas/button.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "webFont", "key": "shop_fonts", "urls": ["assets/font/sing.css", "assets/font/PassionOne-Regular.css"], "families": ["Single Sleeve", "Passion One"], "overwrite": false
+        }
+        ],
+        "meta": {
+            "generated": 1524133056658, "version": "1.0", "app": "SheepUI", "url": "http://gameyop.com", "copyright": "GameYop.com"
+        }
+    }
+    ,
+    "children":[ {
+        "id":"bgShop",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 0
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"default"
+    }
+    ,
+    {
+        "id":"buttonBack",
+        "type":"button",
+        "position": {
+            "x": 0, "y": -120
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 1
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name":"default",
+            "baseFrame":"defaultHorizontal",
+            "hoverFrame":"defaultHorizontal_hover",
+            "downFrame":"defaultHorizontal_press",
+            "baseText": {
+                "id":"buttonBack-default-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Back",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonBack-default-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Back",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonBack-default-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Back",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"buttonSound",
+        "type":"button",
+        "position": {
+            "x": 80, "y": 80
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0, "y": 0
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name": "default", "baseFrame": "soundOn", "hoverFrame": "soundOn_hover", "downFrame": "soundOn_press", "baseText": null, "hoverText": null, "downText": null
+        }
+        ,
+        {
+            "name": "muted", "baseFrame": "soundOff", "hoverFrame": "soundOff_hover", "downFrame": "soundOff_press", "baseText": null, "hoverText": null, "downText": null
+        }
+        ]
+    }
+    ,
+    {
+        "id":"labelShop",
+        "type":"image",
+        "position": {
+            "x": 10, "y": -65
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"shop",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"groupCurrency",
+        "type":"group",
+        "position": {
+            "x": 0, "y": -338
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"labelCurrency",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"shopBox",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"textCurrency",
+            "type":"text",
+            "position": {
+                "x": -146, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Cheese",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 45px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextCurrency",
+            "type":"text",
+            "position": {
+                "x": 150, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"10.000",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 40px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "right", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupItem_01",
+        "type":"group",
+        "position": {
+            "x": -10, "y": -170
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextItem_01",
+            "type":"text",
+            "position": {
+                "x": -220, "y": -59
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Extra cheese:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 7, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextItemDescription_01",
+            "type":"text",
+            "position": {
+                "x": -67, "y": -55
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Gather even more points.",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"labelBar_01",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"bar",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"groupTextPrices_01",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 170
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"varTextPrice_01_01",
+                "type":"text",
+                "position": {
+                    "x": -135, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_01_02",
+                "type":"text",
+                "position": {
+                    "x": -66, "y": -169
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_01_03",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_01_04",
+                "type":"text",
+                "position": {
+                    "x": 67, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_01_05",
+                "type":"text",
+                "position": {
+                    "x": 135, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"groupBarPiece01",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"labelBarPiece01_01",
+                "type":"image",
+                "position": {
+                    "x": -135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece01",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece02_01",
+                "type":"image",
+                "position": {
+                    "x": -68, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece02",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece03_01",
+                "type":"image",
+                "position": {
+                    "x": 0, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece03",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece04_01",
+                "type":"image",
+                "position": {
+                    "x": 67, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece04",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece05_01",
+                "type":"image",
+                "position": {
+                    "x": 135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece05",
+                "key":"label"
+            }
+            ]
+        }
+        ,
+        {
+            "id":"labelBarLines_01_01",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"barLines_01",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"buttonBuy_01",
+            "type":"button",
+            "position": {
+                "x": 220, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name": "default", "baseFrame": "triangle", "hoverFrame": "triangle_hover", "downFrame": "triangle_press", "baseText": null, "hoverText": null, "downText": null
+            }
+            ]
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupItem_02",
+        "type":"group",
+        "position": {
+            "x": -10, "y": -20
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"labelBar_02",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"bar",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"groupTextPrices_02",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 170
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"varTextPrice_02_01",
+                "type":"text",
+                "position": {
+                    "x": -135, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_02_02",
+                "type":"text",
+                "position": {
+                    "x": -66, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_02_03",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_02_05",
+                "type":"text",
+                "position": {
+                    "x": 135, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_02_04",
+                "type":"text",
+                "position": {
+                    "x": 67, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"varTextItem_02",
+            "type":"text",
+            "position": {
+                "x": -220, "y": -59
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Magnet:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 7, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextItemDescription_02",
+            "type":"text",
+            "position": {
+                "x": -102, "y": -56
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Collect more cheese.",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"groupBarPiece_02",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"labelBarPiece01_02",
+                "type":"image",
+                "position": {
+                    "x": -135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece01",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece02_02",
+                "type":"image",
+                "position": {
+                    "x": -68, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece02",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece03_02",
+                "type":"image",
+                "position": {
+                    "x": 0, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece03",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece04_02",
+                "type":"image",
+                "position": {
+                    "x": 67, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece04",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece05_02",
+                "type":"image",
+                "position": {
+                    "x": 135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece05",
+                "key":"label"
+            }
+            ]
+        }
+        ,
+        {
+            "id":"buttonBuy_02",
+            "type":"button",
+            "position": {
+                "x": 220, "y": 1
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name": "default", "baseFrame": "triangle", "hoverFrame": "triangle_hover", "downFrame": "triangle_press", "baseText": null, "hoverText": null, "downText": null
+            }
+            ]
+        }
+        ,
+        {
+            "id":"labelBarLines_01_02",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"barLines_01",
+            "key":"label"
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupItem_03",
+        "type":"group",
+        "position": {
+            "x": -10, "y": 130
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextItem_03",
+            "type":"text",
+            "position": {
+                "x": -220, "y": -59
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Slow motion:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 7, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextItemDescription_03",
+            "type":"text",
+            "position": {
+                "x": -93, "y": -56
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Use slow motion more often.",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"labelBar_03",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"bar",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"groupTextPrices_03",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 169
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"varTextPrice_03_01",
+                "type":"text",
+                "position": {
+                    "x": -135, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_03_02",
+                "type":"text",
+                "position": {
+                    "x": -66, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_03_03",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": -169
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_03_04",
+                "type":"text",
+                "position": {
+                    "x": 67, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_03_05",
+                "type":"text",
+                "position": {
+                    "x": 135, "y": -170
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"groupBarPiece03",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"labelBarPiece01_03",
+                "type":"image",
+                "position": {
+                    "x": -135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece01",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece02_03",
+                "type":"image",
+                "position": {
+                    "x": -68, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece02",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece03_03",
+                "type":"image",
+                "position": {
+                    "x": 0, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece03",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece04_03",
+                "type":"image",
+                "position": {
+                    "x": 67, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece04",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece05_03",
+                "type":"image",
+                "position": {
+                    "x": 135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece05",
+                "key":"label"
+            }
+            ]
+        }
+        ,
+        {
+            "id":"labelBarLines_01_03",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"barLines_01",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"buttonBuy_03",
+            "type":"button",
+            "position": {
+                "x": 220, "y": 1
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name": "default", "baseFrame": "triangle", "hoverFrame": "triangle_hover", "downFrame": "triangle_press", "baseText": null, "hoverText": null, "downText": null
+            }
+            ]
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupItem_04",
+        "type":"group",
+        "position": {
+            "x": -10, "y": 280
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextItem_04",
+            "type":"text",
+            "position": {
+                "x": -220, "y": -58
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Helmet:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 7, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"labelBar_04",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"bar",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"varTextItemDescription_04",
+            "type":"text",
+            "position": {
+                "x": -133, "y": -56
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Run through obstacles.",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"groupTextPrices_04",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"varTextPrice_04_01",
+                "type":"text",
+                "position": {
+                    "x": -135, "y": 0
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_04_02",
+                "type":"text",
+                "position": {
+                    "x": -66, "y": 0
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_04_03",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_04_04",
+                "type":"text",
+                "position": {
+                    "x": 66, "y": 0
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ,
+            {
+                "id":"varTextPrice_04_05",
+                "type":"text",
+                "position": {
+                    "x": 135, "y": 0
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "text":"9999",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 36px 'Single Sleeve'", "fontStyle": "normal", "fontWeight": 400, "backgroundColor": null, "fill": "rgba(255,255,255,1)", "align": "center", "boundsAlignH": "left", "boundsAlignV": "top", "stroke": "black", "strokeThickness": 0, "wordWrap": false, "wordWrapWidth": 100, "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowStroke": true, "shadowFill": true
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"groupBarPiece04",
+            "type":"group",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "children":[ {
+                "id":"labelBarPiece01_04",
+                "type":"image",
+                "position": {
+                    "x": -135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece01",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece02_04",
+                "type":"image",
+                "position": {
+                    "x": -68, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece02",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece05_04",
+                "type":"image",
+                "position": {
+                    "x": 135, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece05",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece04_04",
+                "type":"image",
+                "position": {
+                    "x": 67, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece04",
+                "key":"label"
+            }
+            ,
+            {
+                "id":"labelBarPiece03_04",
+                "type":"image",
+                "position": {
+                    "x": 0, "y": 1
+                }
+                ,
+                "angle":0,
+                "anchor": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "align": {
+                    "x": 0.5, "y": 0.5
+                }
+                ,
+                "frame":"barPiece03",
+                "key":"label"
+            }
+            ]
+        }
+        ,
+        {
+            "id":"labelBarLines_01_04",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"barLines_01",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"buttonBuy_04",
+            "type":"button",
+            "position": {
+                "x": 220, "y": 1
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name": "default", "baseFrame": "triangle", "hoverFrame": "triangle_hover", "downFrame": "triangle_press", "baseText": null, "hoverText": null, "downText": null
+            }
+            ]
+        }
+        ]
+    }
+    ],
+    "id":"6dff30d1-4fe6-40ae-8cda-cee46c783da3",
+    "editor-version":"0.12.4",
+    "exporter-version":"0.8.4"
+}

@@ -1,0 +1,69 @@
+{
+    "gamePack":[ {
+        "type": "layout", "key": "layout_game", "url": "layout/ingame.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeTexture", "key": "character", "url": "assets/model/playerChar_01.png", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "character", "url": "assets/model/playerChar_01.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "helmet", "url": "assets/model/equip_helmet.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "magnet", "url": "assets/model/equip_magnet.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeTexture", "key": "atlas_01", "url": "assets/model/env.png", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeObject", "key": "roads", "url": "assets/model/env.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "pickup_magnet", "url": "assets/model/pickup_magnet.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "pickup_01", "url": "assets/model/pickup_01.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "pickup_02", "url": "assets/model/pickup_02.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "pickup_03", "url": "assets/model/pickup_03.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeJson", "key": "pickup_04", "url": "assets/model/pickup_04.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "json", "key": "cloud", "url": "assets/particle/cloud.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeTexture", "key": "cloud", "url": "assets/particle/cloud.png", "overwrite": false
+    }
+    ,
+    {
+        "type": "json", "key": "magnet", "url": "assets/particle/magnet.json", "overwrite": false
+    }
+    ,
+    {
+        "type": "threeTexture", "key": "magnet", "url": "assets/particle/magnet.png", "overwrite": false
+    }
+    ],
+    "meta": {
+        "generated": "1508779004", "version": "1.0", "app": "Hand made", "url": "http://gameyop.com", "copyright": "GameYop.com"
+    }
+}

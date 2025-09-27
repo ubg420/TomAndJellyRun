@@ -1,0 +1,447 @@
+{
+    "name":"options",
+    "size": {
+        "width": 720, "height": 1280
+    }
+    ,
+    "resources": {
+        "options":[ {
+            "type": "image", "key": "ingameOverlay", "url": "assets/image/ingameOverlay.png", "overwrite": false
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "label", "textureURL": "assets/atlas/label.png", "atlasURL": "assets/atlas/label.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "button", "textureURL": "assets/atlas/button.png", "atlasURL": "assets/atlas/button.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "webFont", "key": "options_fonts", "urls": ["assets/font/sing.css", "assets/font/PassionOne-Regular.css"], "families": ["Single Sleeve", "Passion One"], "overwrite": false
+        }
+        ],
+        "meta": {
+            "generated": 1524226947355, "version": "1.0", "app": "SheepUI", "url": "http://gameyop.com", "copyright": "GameYop.com"
+        }
+    }
+    ,
+    "children":[ {
+        "id":"bgOptions",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 0
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"ingameOverlay"
+    }
+    ,
+    {
+        "id":"frameOptions",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 0
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"options",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"buttonAudio",
+        "type":"button",
+        "position": {
+            "x": 0, "y": -180
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name":"default",
+            "baseFrame":"longHorizontal",
+            "hoverFrame":"longHorizontal_hover",
+            "downFrame":"longHorizontal_press",
+            "baseText": {
+                "id":"buttonAudio-default-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Music on",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonAudio-default-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Music on",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonAudio-default-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Music on",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ,
+        {
+            "name":"muted",
+            "baseFrame":"longHorizontal",
+            "hoverFrame":"longHorizontal_hover",
+            "downFrame":"longHorizontal_press",
+            "baseText": {
+                "id":"buttonAudio-muted-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Music Off",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonAudio-muted-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Music Off",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonAudio-muted-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Music Off",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"buttonTutorial",
+        "type":"button",
+        "position": {
+            "x": 0, "y": -30
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name":"default",
+            "baseFrame":"longHorizontal",
+            "hoverFrame":"longHorizontal_hover",
+            "downFrame":"longHorizontal_press",
+            "baseText": {
+                "id":"buttonTutorial-default-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Help",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonTutorial-default-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Help",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonTutorial-default-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Help",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"buttonRestart",
+        "type":"button",
+        "position": {
+            "x": 0, "y": 120
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name":"default",
+            "baseFrame":"longHorizontal",
+            "hoverFrame":"longHorizontal_hover",
+            "downFrame":"longHorizontal_press",
+            "baseText": {
+                "id":"buttonRestart-default-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Restart",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 280, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonRestart-default-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Restart",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 280, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonRestart-default-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Restart",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 280, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"buttonContinue",
+        "type":"button",
+        "position": {
+            "x": 0, "y": 270
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name":"default",
+            "baseFrame":"longHorizontal",
+            "hoverFrame":"longHorizontal_hover",
+            "downFrame":"longHorizontal_press",
+            "baseText": {
+                "id":"buttonContinue-default-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Continue",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonContinue-default-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Continue",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonContinue-default-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Continue",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ]
+    }
+    ],
+    "id":"d1b519f6-7040-4d15-90ec-62624ab5ef5b",
+    "editor-version":"0.12.4",
+    "exporter-version":"0.8.4"
+}

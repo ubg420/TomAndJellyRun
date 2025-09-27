@@ -1,0 +1,1032 @@
+{
+    "name":"end",
+    "size": {
+        "width": 720, "height": 1280
+    }
+    ,
+    "resources": {
+        "end":[ {
+            "type": "image", "key": "default", "url": "assets/image/default.jpg", "overwrite": false
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "button", "textureURL": "assets/atlas/button.png", "atlasURL": "assets/atlas/button.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "label", "textureURL": "assets/atlas/label.png", "atlasURL": "assets/atlas/label.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "webFont", "key": "end_fonts", "urls": ["assets/font/sing.css", "assets/font/PassionOne-Regular.css"], "families": ["Single Sleeve", "Passion One"], "overwrite": false
+        }
+        ],
+        "meta": {
+            "generated": 1524733822734, "version": "1.0", "app": "SheepUI", "url": "http://gameyop.com", "copyright": "GameYop.com"
+        }
+    }
+    ,
+    "children":[ {
+        "id":"bgEnd",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 0
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"default"
+    }
+    ,
+    {
+        "id":"buttonSound",
+        "type":"button",
+        "position": {
+            "x": 80, "y": 80
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0, "y": 0
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name": "default", "baseFrame": "soundOn", "hoverFrame": "soundOn_hover", "downFrame": "soundOn_press", "baseText": null, "hoverText": null, "downText": null
+        }
+        ,
+        {
+            "name": "muted", "baseFrame": "soundOff", "hoverFrame": "soundOff_hover", "downFrame": "soundOff_press", "baseText": null, "hoverText": null, "downText": null
+        }
+        ]
+    }
+    ,
+    {
+        "id":"frameEnd",
+        "type":"image",
+        "position": {
+            "x": 0, "y": -46
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"end",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"groupMeter",
+        "type":"group",
+        "position": {
+            "x": 0, "y": -166
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"labelMeter",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"end01",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"TextMeter",
+            "type":"text",
+            "position": {
+                "x": -200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Meters:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 36px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextMeter",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"1234567890",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 45px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupPoints",
+        "type":"group",
+        "position": {
+            "x": 0, "y": 254
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"labelPoints",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"end01",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"TextPoints",
+            "type":"text",
+            "position": {
+                "x": -200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Points:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 36px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextPoints",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"1234567890",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 45px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupButton",
+        "type":"group",
+        "position": {
+            "x": 0, "y": 381
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"buttonNameEntry",
+            "type":"button",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name":"default",
+                "baseFrame":"defaultSquaredBig",
+                "hoverFrame":"defaultSquaredBig_hover",
+                "downFrame":"defaultSquaredBig_press",
+                "baseText": {
+                    "id":"buttonNameEntry-default-baseText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"More",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 28, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "hoverText": {
+                    "id":"buttonNameEntry-default-hoverText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"More",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 28, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "downText": {
+                    "id":"buttonNameEntry-default-downText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"More",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 28px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 28, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"buttonReplay",
+            "type":"button",
+            "position": {
+                "x": -150, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name":"default",
+                "baseFrame":"defaultSquaredBig",
+                "hoverFrame":"defaultSquaredBig_hover",
+                "downFrame":"defaultSquaredBig_press",
+                "baseText": {
+                    "id":"buttonReplay-default-baseText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Play again",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 30px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 30, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "hoverText": {
+                    "id":"buttonReplay-default-hoverText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Play again",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 30px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 30, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "downText": {
+                    "id":"buttonReplay-default-downText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Play again",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 30px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 30, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"buttonHighscore",
+            "type":"button",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name":"default",
+                "baseFrame":"defaultSquaredBig",
+                "hoverFrame":"defaultSquaredBig_hover",
+                "downFrame":"defaultSquaredBig_press",
+                "baseText": {
+                    "id":"buttonHighscore-default-baseText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Bestenliste",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 25px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 25, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "hoverText": {
+                    "id":"buttonHighscore-default-hoverText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Bestenliste",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 25px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 25, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "downText": {
+                    "id":"buttonHighscore-default-downText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Bestenliste",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 25px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 25, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+            }
+            ]
+        }
+        ,
+        {
+            "id":"buttonShop",
+            "type":"button",
+            "position": {
+                "x": 150, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "key":"button",
+            "states":[ {
+                "name":"default",
+                "baseFrame":"defaultSquaredExtra",
+                "hoverFrame":"defaultSquaredExtra_hover",
+                "downFrame":"defaultSquaredExtra_press",
+                "baseText": {
+                    "id":"buttonShop-default-baseText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Extras",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 30px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 30, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "hoverText": {
+                    "id":"buttonShop-default-hoverText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Extras",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 30px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 30, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+                ,
+                "downText": {
+                    "id":"buttonShop-default-downText",
+                    "type":"text",
+                    "position": {
+                        "x": 0, "y": 0
+                    }
+                    ,
+                    "text":"Extras",
+                    "lineSpacing":0,
+                    "padding": {
+                        "x": 0, "y": 0, "type": 25
+                    }
+                    ,
+                    "style": {
+                        "font": "400 30px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 30, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 8, "wordWrap": true, "wordWrapWidth": 150, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                    }
+                }
+            }
+            ]
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupTotal",
+        "type":"group",
+        "position": {
+            "x": 0, "y": 178
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"labelTotal",
+            "type":"image",
+            "position": {
+                "x": 0, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"end03",
+            "key":"label"
+        }
+        ,
+        {
+            "id":"TextTotal",
+            "type":"text",
+            "position": {
+                "x": -200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"Cheese:",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 36px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varTextTotal",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"10000",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 45px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"labelCheese",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 7
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"end02",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"groupCheese_01",
+        "type":"group",
+        "position": {
+            "x": 0, "y": -84
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextCheeseAmount_01",
+            "type":"text",
+            "position": {
+                "x": -135, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"x 100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varCheeseScore_01",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"cheese_01",
+            "type":"image",
+            "position": {
+                "x": -180, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"cheese_01",
+            "key":"label"
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupCheese_02",
+        "type":"group",
+        "position": {
+            "x": 0, "y": -24
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextCheeseAmount_02",
+            "type":"text",
+            "position": {
+                "x": -135, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"x 100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varCheeseScore_02",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"cheese_02",
+            "type":"image",
+            "position": {
+                "x": -180, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"cheese_02",
+            "key":"label"
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupCheese_03",
+        "type":"group",
+        "position": {
+            "x": 0, "y": 35
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextCheeseAmount_03",
+            "type":"text",
+            "position": {
+                "x": -135, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"x 100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varCheeseScore_03",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"cheese_03",
+            "type":"image",
+            "position": {
+                "x": -180, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"cheese_03",
+            "key":"label"
+        }
+        ]
+    }
+    ,
+    {
+        "id":"groupCheese_04",
+        "type":"group",
+        "position": {
+            "x": 0, "y": 94
+        }
+        ,
+        "angle":0,
+        "children":[ {
+            "id":"varTextCheeseAmount_04",
+            "type":"text",
+            "position": {
+                "x": -135, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"x 100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"varCheeseScore_04",
+            "type":"text",
+            "position": {
+                "x": 200, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 1, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "text":"100",
+            "lineSpacing":0,
+            "padding": {
+                "x": 0, "y": 0, "type": 25
+            }
+            ,
+            "style": {
+                "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 6, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+            }
+        }
+        ,
+        {
+            "id":"cheese_04",
+            "type":"image",
+            "position": {
+                "x": -180, "y": 0
+            }
+            ,
+            "angle":0,
+            "anchor": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "align": {
+                "x": 0.5, "y": 0.5
+            }
+            ,
+            "frame":"cheese_04",
+            "key":"label"
+        }
+        ]
+    }
+    ],
+    "id":"55e281b4-3522-4f94-bdf8-67d5e5883663",
+    "editor-version":"0.12.4",
+    "exporter-version":"0.8.4"
+}

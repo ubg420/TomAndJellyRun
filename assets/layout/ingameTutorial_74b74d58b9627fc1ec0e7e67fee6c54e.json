@@ -1,0 +1,317 @@
+{
+    "name":"ingameTutorial",
+    "size": {
+        "width": 720, "height": 1280
+    }
+    ,
+    "resources": {
+        "ingameTutorial":[ {
+            "type": "atlasJSONArray", "key": "button", "textureURL": "assets/atlas/button.png", "atlasURL": "assets/atlas/button.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "atlasJSONArray", "key": "label", "textureURL": "assets/atlas/label.png", "atlasURL": "assets/atlas/label.json", "atlasData": null
+        }
+        ,
+        {
+            "type": "webFont", "key": "ingameTutorial_fonts", "urls": ["assets/font/PassionOne-Regular.css", "assets/font/sing.css"], "families": ["Passion One", "Single Sleeve"], "overwrite": false
+        }
+        ],
+        "meta": {
+            "generated": 1524737637547, "version": "1.0", "app": "SheepUI", "url": "http://gamessump.com", "copyright": "GameYop.com"
+        }
+    }
+    ,
+    "children":[ {
+        "id":"buttonOptions",
+        "type":"button",
+        "position": {
+            "x": 80, "y": 80
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0, "y": 0
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name": "default", "baseFrame": "options", "hoverFrame": "options_hover", "downFrame": "options_press", "baseText": null, "hoverText": null, "downText": null
+        }
+        ]
+    }
+    ,
+    {
+        "id":"labelPopup",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 0
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"popup",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"labelUpArrow",
+        "type":"image",
+        "position": {
+            "x": 0, "y": -175
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"upArrow",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"labelDownArrow",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 196
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"downArrow",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"labelKeyboard",
+        "type":"image",
+        "position": {
+            "x": 0, "y": 200
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"keyboard",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"labelTouch",
+        "type":"image",
+        "position": {
+            "x": -22, "y": 212
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"touch",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"labelKeyboardVert",
+        "type":"image",
+        "position": {
+            "x": 1, "y": 200
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"keyboardVert",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"labelTouchVert",
+        "type":"image",
+        "position": {
+            "x": -12, "y": 203
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"touchVert",
+        "key":"label"
+    }
+    ,
+    {
+        "id":"buttonContinue",
+        "type":"button",
+        "position": {
+            "x": 0, "y": 168
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "key":"button",
+        "states":[ {
+            "name":"default",
+            "baseFrame":"defaultHorizontal",
+            "hoverFrame":"defaultHorizontal_hover",
+            "downFrame":"defaultHorizontal_press",
+            "baseText": {
+                "id":"buttonContinue-default-baseText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Continue",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "hoverText": {
+                "id":"buttonContinue-default-hoverText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Continue",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+            ,
+            "downText": {
+                "id":"buttonContinue-default-downText",
+                "type":"text",
+                "position": {
+                    "x": 0, "y": 0
+                }
+                ,
+                "text":"Continue",
+                "lineSpacing":0,
+                "padding": {
+                    "x": 0, "y": 0, "type": 25
+                }
+                ,
+                "style": {
+                    "font": "400 60px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "fontSize": 60, "align": "center", "stroke": "rgba(25,81,117,1)", "strokeThickness": 9, "wordWrap": false, "wordWrapWidth": 250, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+                }
+            }
+        }
+        ]
+    }
+    ,
+    {
+        "id":"varTextPopup",
+        "type":"text",
+        "position": {
+            "x": -105, "y": -3
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "text":"Use the slow motion to slow down and collect more cheese.",
+        "lineSpacing":0,
+        "padding": {
+            "x": 0, "y": 0, "type": 25
+        }
+        ,
+        "style": {
+            "font": "400 35px 'Passion One'", "fontStyle": "normal", "fontWeight": 400, "fill": "rgba(255,255,255,1)", "align": "left", "stroke": "rgba(25,81,117,1)", "strokeThickness": 0, "wordWrap": true, "wordWrapWidth": 415, "backgroundColor": null, "boundsAlignH": "center", "boundsAlignV": "middle", "maxLines": 0, "shadowOffsetX": 0, "shadowOffsetY": 0, "shadowColor": "rgba(0,0,0,0)", "shadowBlur": 0, "tabs": 0, "shadowFill": true, "shadowStroke": true
+        }
+    }
+    ,
+    {
+        "id":"labelMagnet",
+        "type":"image",
+        "position": {
+            "x": -5, "y": -300
+        }
+        ,
+        "angle":0,
+        "anchor": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "align": {
+            "x": 0.5, "y": 0.5
+        }
+        ,
+        "frame":"magnet",
+        "key":"label"
+    }
+    ],
+    "id":"86f064fa-59e9-481d-b48d-6fed0feade15",
+    "editor-version":"0.12.4",
+    "exporter-version":"0.8.4"
+}
